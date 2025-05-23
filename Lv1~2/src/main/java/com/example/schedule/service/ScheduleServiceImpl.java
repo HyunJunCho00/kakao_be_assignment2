@@ -26,7 +26,6 @@ public class ScheduleServiceImpl implements ScheduleService {
         schedule.setCreatedAt(LocalDateTime.now());
         schedule.setUpdatedAt(LocalDateTime.now());
 
-        // save는 ScheduleResponseDto 반환
         return scheduleRepository.save(schedule);
     }
 
