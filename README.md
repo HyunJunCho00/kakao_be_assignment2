@@ -15,9 +15,8 @@
 
 ## 🛠️ ERD 그리기 && SQL 테이블 생성문
 
-![image](https://github.com/user-attachments/assets/807f9c25-e5d4-4def-9548-305b63440973)
+![image](https://github.com/user-attachments/assets/a2b87b7c-7cef-4c09-8c95-580f5805043b)
 
-![image](https://github.com/user-attachments/assets/ca68e66f-9fb1-4611-a8bb-bc9e1a043f86)
 
 
 ```sql
