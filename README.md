@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS scheduled.schedule (
     password    VARCHAR(255)                 NOT NULL,
     created_at  DATETIME                     NULL,
     updated_at  DATETIME                     NULL,
-    title       VARCHAR(255) DEFAULT '제목 없음' NOT NULL
+    title       VARCHAR(255) NULL
 );
 ```
 # Lv3~6 일정 관리 시스템
