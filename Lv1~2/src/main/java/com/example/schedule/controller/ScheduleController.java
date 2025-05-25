@@ -41,9 +41,9 @@ public class ScheduleController {
     @GetMapping
     public ResponseEntity<List<ScheduleResponseDto>> getAllSchedules(
             @RequestParam(required = false) String author,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate modifiedDate
+            @RequestParam(name = "updated_at", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate modifiedDate
     ) {
-        //System.out.println("author : controller = " + author);
+
         return ResponseEntity.ok(scheduleService.getAllSchedules(author, modifiedDate));
     }
 
