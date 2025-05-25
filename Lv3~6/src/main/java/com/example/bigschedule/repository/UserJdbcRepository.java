@@ -54,7 +54,7 @@ public class UserJdbcRepository implements UserRepository {
     }
 
     public List<User> findAll() {
-        String sql = "SELECT * FROM users";
+        String sql = "SELECT * FROM users ORDER BY updated_at DESC";
         return jdbcTemplate.query(sql, userEntityRowMapper());
     }
 
