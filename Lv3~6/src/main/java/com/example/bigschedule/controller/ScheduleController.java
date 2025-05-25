@@ -32,7 +32,7 @@ public class ScheduleController {
     @GetMapping
     public ResponseEntity<List<ScheduleResponseDto>> getAllSchedules(
             @RequestParam(required = false) Long userId,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate modifiedDate,
+            @RequestParam(name = "updated_at", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate modifiedDate,
             @RequestParam(required = false) String name,
             @RequestParam(required = false) String email,
             @RequestParam(required = false) String title,
