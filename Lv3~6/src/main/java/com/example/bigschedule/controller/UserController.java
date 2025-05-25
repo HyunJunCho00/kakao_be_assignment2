@@ -46,7 +46,7 @@ public class UserController {
     @GetMapping("/{id}/schedules")
     public ResponseEntity<List<ScheduleResponseDto>> getUserSchedules(
             @PathVariable Long id,
-            @RequestParam(required = false) String modifiedDate,
+            @RequestParam(name = "updated_at", required = false) String modifiedDate,
             @RequestParam(required = false) String title,
             @RequestParam(required = false) String task
     ) {
